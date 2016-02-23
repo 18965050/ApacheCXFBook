@@ -1,8 +1,11 @@
 package demo.order; 
 
 import javax.jws.WebService;
+import javax.jws.soap.SOAPBinding;
+import javax.jws.soap.SOAPBinding.Style;
 
 @WebService(serviceName="OrderProcessService", portName="OrderProcessPort")
+@SOAPBinding(style=Style.DOCUMENT)
 public class OrderProcessImpl implements OrderProcess {
 
 	public String processOrder(Order order) {
