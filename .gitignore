@@ -1,0 +1,11 @@
+# eclipse
+.project
+.settings
+.classpath
+
+#compile
+target
+
+# web
+**/WEB-INF/classes
+**/WEB-INF/lib
