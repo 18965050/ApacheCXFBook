@@ -17,15 +17,15 @@
 	<jaxws:client id="orderClient" serviceClass="demo.order.OrderProcess" address="https://localhost:8443/OrderProcess" />
 	<http-conf:conduit name="*.http-conduit">  
 		<http-conf:tlsClientParameters secureSocketProtocol="SSL">  
-    
+    	
 		  <sec:trustManagers>  
-			  <sec:keyStore type="JKS" password="changeit" file="D:\reference\CXF\ApacheCXFBook\Chapter4\HTTPs\orderprocess.jks" />  
+			  <sec:keyStore type="JKS" password="changeit" file="F:\github\CXF\ApacheCXFBook\Chapter4\HTTPs\orderprocess.jks" />  
 		  </sec:trustManagers>  
 		<!--
 		  <sec:keyManagers keyPassword="changeit">  
-			   <sec:keyStore type="JKS" password="changeit" file="D:/reference/CXF/ApacheCXFBook/Chapter4/HTTPs/orderprocess.jks" />  
-		  </sec:keyManagers>  --> 
-		  
+			   <sec:keyStore type="JKS" password="changeit" file="F:/github/CXF/ApacheCXFBook/Chapter4/HTTPs/orderprocess.jks" />  
+		  </sec:keyManagers>  
+		  --> 
 		</http-conf:tlsClientParameters>  
 	</http-conf:conduit>  
 </beans>  
