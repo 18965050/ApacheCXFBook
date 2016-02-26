@@ -5,7 +5,7 @@
   <!-- Name of the artifact -->
   <artifactId>restapp</artifactId>
   <!-- Packing format. We want to pakacge this as a WAR archive -->
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
   <!-- Version for the oderapp arifact -->
   <version>1.0-SNAPSHOT</version>
   <name>restapp</name>
@@ -27,7 +27,20 @@
       </resource>
     </resources>
     <plugins>
-      <!-- <plugin> <artifactId>maven-war-plugin</artifactId> <version>2.0</version> <configuration> <webappDirectory>webapp</webappDirectory> <webResources> </webResources> </configuration> </plugin> -->
+      <!--  
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.3</version>
+				<configuration>
+					<webappDirectory>webapp</webappDirectory>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+					<webResources>
+					</webResources>
+				</configuration>
+			</plugin>
+      
+      -->
+      
       <plugin>
         <!-- Plugin for compiling Java code -->
         <artifactId>maven-compiler-plugin</artifactId>
