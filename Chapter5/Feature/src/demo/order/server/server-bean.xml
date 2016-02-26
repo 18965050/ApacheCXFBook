@@ -12,9 +12,9 @@
 <!--  <import resource="classpath:META-INF/cxf/cxf.xml"/>   -->
 <!--  <import resource="classpath:META-INF/cxf/cxf-extension-soap.xml"/>   -->
 
-		<http-conf:destination name="*.http-destination">
+	<!--  <http-conf:destination name="*.http-destination">
 		<http-conf:server ContentEncoding="gzip" /> 
-	</http-conf:destination>
+	</http-conf:destination> -->
 
   <jaxws:endpoint name="orderProcess" address="http://localhost:8080/feature/OrderProcessGZIP" implementor="demo.order.OrderProcessImpl"/>   
 </beans>  

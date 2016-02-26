@@ -41,19 +41,21 @@
     <finalName>orderapp</finalName>
   </build>
   <dependencies>
+
     <dependency>
-      <!-- Apache JAX-WS CXF Dependency for WAR and JAX-WS Client -->
       <groupId>org.apache.cxf</groupId>
       <artifactId>cxf-rt-frontend-jaxws</artifactId>
       <version>${cxf.version}</version>
     </dependency>
-
+ 
+ 
     <dependency>
       <!-- Apache JAX-WS CXF Dependency for WAR and JAX-RS Client -->
       <groupId>org.apache.cxf</groupId>
       <artifactId>cxf-rt-frontend-jaxrs</artifactId>
-      <version>2.3.4</version>
+      <version>${cxf.version}</version>
     </dependency> 
+        
 
     <dependency>
       <!-- Apache JAX-WS CXF Dependency for JAX-WS Client -->
@@ -61,5 +63,12 @@
       <artifactId>cxf-rt-transports-http</artifactId>
       <version>${cxf.version}</version>
     </dependency>
+    
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-transports-http-jetty</artifactId>
+			<version>${cxf.version}</version>
+		</dependency>    
+    
   </dependencies>
 </project>

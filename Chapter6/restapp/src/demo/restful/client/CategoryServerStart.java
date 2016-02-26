@@ -25,8 +25,8 @@ public class CategoryServerStart {
 
 		restServer.setResourceClasses(Category.class);
 
-		// restServer.setServiceBeans(categoryService);
-		restServer.setServiceBean(categoryService);
+		 restServer.setServiceBeans(categoryService);
+		//restServer.setServiceBean(categoryService);
 
 		restServer.setAddress("http://localhost:9000/");
 
